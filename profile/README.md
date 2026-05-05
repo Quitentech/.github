@@ -30,7 +30,7 @@
 
 No algorithms. No curation bias. No noise. Just developers publishing things that matter to other developers.
 
-> <img src="https://skillicons.dev/icons?i=github" height="14" align="absmiddle" /> Maintained by [@fy2ne](https://github.com/fy2ne) &nbsp;·&nbsp; Infrastructure research: [Essential Devs](https://github.com/Essential-Devs)
+> <img src="https://skillicons.dev/icons?i=github" height="14" align="absmiddle" /> Maintained by [Essential Devs](https://github.com/Essential-Devs)
 
 ---
 
@@ -86,7 +86,7 @@ No algorithms. No curation bias. No noise. Just developers publishing things tha
 
 [![→ quiten.tech](https://img.shields.io/badge/%E2%86%92%20quiten.tech-07000e?style=for-the-badge&logo=googlechrome&logoColor=7c3aed)](https://quiten.tech)
 &nbsp;
-[![→ @fy2ne](https://img.shields.io/badge/%E2%86%92%20%40fy2ne-07000e?style=for-the-badge&logo=github&logoColor=9333ea)](https://github.com/fy2ne)
+[![→ Essential Devs](https://img.shields.io/badge/%E2%86%92%20Essential_Devs-07000e?style=for-the-badge&logo=github&logoColor=9333ea)](https://github.com/Essential-Devs)
 &nbsp;
 [![→ essential devs](https://img.shields.io/badge/%E2%86%92%20essential_devs-07000e?style=for-the-badge&logo=github&logoColor=c026d3)](https://github.com/Essential-Devs)
 
