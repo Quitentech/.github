@@ -1,123 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="160" viewBox="0 0 1280 160">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="160" viewBox="0 0 1280 160" fill="none">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="50%" r="65%">
-      <stop offset="0%" stop-color="#130020"/>
-      <stop offset="100%" stop-color="#07000e"/>
-    </radialGradient>
-    <linearGradient id="mg1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#4614d0" stop-opacity="0"/>
-      <stop offset="28%"  stop-color="#7c3aed" stop-opacity="1"/>
-      <stop offset="58%"  stop-color="#c026d3" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#4614d0" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="mg2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#6d28d9" stop-opacity="0"/>
-      <stop offset="35%"  stop-color="#9333ea" stop-opacity="0.7"/>
-      <stop offset="65%"  stop-color="#e11d48" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="mg3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#a855f7" stop-opacity="0"/>
-      <stop offset="40%"  stop-color="#a855f7" stop-opacity="0.9"/>
-      <stop offset="72%"  stop-color="#c026d3" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="titleG" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#ddd6fe"/>
-      <stop offset="45%"  stop-color="#7c3aed"/>
+    <!-- Sharp, professional gradient for the brand name -->
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#473ad6"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
       <stop offset="100%" stop-color="#c026d3"/>
     </linearGradient>
-    <linearGradient id="edge" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#4614d0" stop-opacity="0"/>
-      <stop offset="25%"  stop-color="#7c3aed" stop-opacity="0.9"/>
-      <stop offset="50%"  stop-color="#c026d3"/>
-      <stop offset="75%"  stop-color="#7c3aed" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#4614d0" stop-opacity="0"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="6" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="softglow">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    
+    <!-- Pattern for industrial texture -->
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7c3aed" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
   </defs>
 
-  <rect width="1280" height="160" fill="url(#bg)"/>
+  <!-- Transparent Background with subtle technical grid -->
+  <rect width="1280" height="160" fill="url(#grid)" />
 
-  <!-- ambient orbs -->
-  <ellipse cx="160"  cy="80" rx="260" ry="90"  fill="#4614d0" opacity="0.06"/>
-  <ellipse cx="1120" cy="80" rx="260" ry="90"  fill="#c026d3" opacity="0.06"/>
-  <ellipse cx="640"  cy="80" rx="400" ry="100" fill="#6d28d9" opacity="0.04"/>
+  <!-- Structural "Industrial" Accents -->
+  <g opacity="0.4">
+    <path d="M 20 40 L 20 20 L 60 20" stroke="#473ad6" stroke-width="2" />
+    <path d="M 1220 120 L 1260 120 L 1260 140" stroke="#c026d3" stroke-width="2" />
+    <line x1="80" y1="80" x2="280" y2="80" stroke="#7c3aed" stroke-width="0.5" stroke-dasharray="4 4" />
+    <line x1="1000" y1="80" x2="1200" y2="80" stroke="#7c3aed" stroke-width="0.5" stroke-dasharray="4 4" />
+  </g>
 
-  <!-- magma line 1 — bright, flows right -->
-  <path d="M-240,36 C60,18 280,58 520,30 C760,2 940,50 1160,32 C1280,24 1340,36 1520,36"
-        stroke="url(#mg3)" stroke-width="1.6" fill="none">
-    <animateTransform attributeName="transform" type="translate" from="0,0" to="200,0"  dur="9s"  repeatCount="indefinite"/>
-  </path>
-  <path d="M-240,36 C60,18 280,58 520,30 C760,2 940,50 1160,32 C1280,24 1340,36 1520,36"
-        stroke="url(#mg3)" stroke-width="1.6" fill="none">
-    <animateTransform attributeName="transform" type="translate" from="-1280,0" to="0,0" dur="9s"  repeatCount="indefinite"/>
-  </path>
+  <!-- Technical Data Points (SEO/Contextual Metadata) -->
+  <g font-family="monospace" font-size="10" fill="#7c3aed" opacity="0.6" letter-spacing="1">
+    <text x="40" y="35">ORG: ESSENTIAL_DEVS</text>
+    <text x="40" y="140">STATUS: REBUILDING_V2</text>
+    <text x="1240" y="35" text-anchor="end">LOC: EDGE_NODES</text>
+    <text x="1240" y="140" text-anchor="end">RELEASE: 08.08.2026</text>
+  </g>
 
-  <!-- magma line 2 — flows left, hot tinge -->
-  <path d="M-120,74 C180,58 420,92 640,70 C860,48 1100,84 1400,72"
-        stroke="url(#mg2)" stroke-width="1.2" fill="none">
-    <animateTransform attributeName="transform" type="translate" from="0,0" to="-180,0" dur="14s" repeatCount="indefinite"/>
-  </path>
+  <!-- QUITEN Main Branding -->
+  <text x="640" y="90" text-anchor="middle" 
+    font-family="ui-monospace, 'JetBrains Mono', 'Cascadia Code', monospace" 
+    font-size="62" font-weight="800" 
+    letter-spacing="12" fill="url(#brandGradient)">QUITEN</text>
 
-  <!-- magma line 3 — lower, slower -->
-  <path d="M-300,122 C0,108 280,138 560,118 C840,98 1060,132 1360,118 C1440,114 1500,120 1580,122"
-        stroke="url(#mg1)" stroke-width="1.1" fill="none">
-    <animateTransform attributeName="transform" type="translate" from="0,0" to="140,0"  dur="7s"  repeatCount="indefinite"/>
-  </path>
-  <path d="M-300,122 C0,108 280,138 560,118 C840,98 1060,132 1360,118 C1440,114 1500,120 1580,122"
-        stroke="url(#mg1)" stroke-width="1.1" fill="none">
-    <animateTransform attributeName="transform" type="translate" from="-1280,0" to="0,0" dur="7s"  repeatCount="indefinite"/>
-  </path>
-
-  <!-- magma line 4 — whisper thin, very slow -->
-  <path d="M-400,52 C-100,44 240,64 560,50 C880,36 1100,58 1680,50"
-        stroke="#9333ea" stroke-width="0.7" fill="none" opacity="0.35">
-    <animateTransform attributeName="transform" type="translate" from="0,6" to="280,6" dur="20s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- top/bottom animated edge -->
-  <rect x="0" y="0"     width="1280" height="1.5" fill="url(#edge)">
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="0" y="158.5" width="1280" height="1.5" fill="url(#edge)">
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="1.5s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- corner brackets -->
-  <path d="M26,24 L26,13 L37,13" stroke="#7c3aed" stroke-width="1.5" fill="none" opacity="0.8"/>
-  <path d="M1254,24 L1254,13 L1243,13" stroke="#7c3aed" stroke-width="1.5" fill="none" opacity="0.8"/>
-  <path d="M26,136 L26,147 L37,147" stroke="#c026d3" stroke-width="1.5" fill="none" opacity="0.8"/>
-  <path d="M1254,136 L1254,147 L1243,147" stroke="#c026d3" stroke-width="1.5" fill="none" opacity="0.8"/>
-
-  <!-- corner dots -->
-  <circle cx="26"   cy="13"  r="2" fill="#7c3aed" filter="url(#softglow)"/>
-  <circle cx="1254" cy="13"  r="2" fill="#7c3aed" filter="url(#softglow)"/>
-  <circle cx="26"   cy="147" r="2" fill="#c026d3" filter="url(#softglow)"/>
-  <circle cx="1254" cy="147" r="2" fill="#c026d3" filter="url(#softglow)"/>
-
-  <!-- domain hint -->
-  <text x="1246" y="34" text-anchor="end"
-    font-family="'Courier New', Courier, monospace"
-    font-size="10" fill="#6d28d9" letter-spacing="1.5" opacity="0.9">quiten.tech</text>
-
-  <!-- QUITEN -->
-  <text x="640" y="97" text-anchor="middle"
-    font-family="'Courier New', Courier, monospace"
-    font-size="66" font-weight="900" letter-spacing="18"
-    fill="url(#titleG)" filter="url(#glow)">QUITEN</text>
-
-  <!-- tagline -->
-  <text x="640" y="130" text-anchor="middle"
-    font-family="'Courier New', Courier, monospace"
-    font-size="11" letter-spacing="5.5" fill="#6d28d9" opacity="0.85">
-    DEVELOPER TOOLS  ·  COMMUNITY  ·  OPEN SOURCE
+  <!-- Professional Tagline -->
+  <text x="640" y="120" text-anchor="middle" 
+    font-family="monospace" 
+    font-size="12" font-weight="400" 
+    letter-spacing="6" fill="#473ad6" opacity="0.9">
+    DEVELOPER INFRASTRUCTURE &amp; OPEN SOURCE REGISTRY
   </text>
+  
+  <!-- Subtle progress indicator line -->
+  <rect x="540" y="135" width="200" height="1" fill="#7c3aed" opacity="0.3" />
+  <rect x="540" y="135" width="60" height="1" fill="#c026d3" />
 </svg>
